@@ -51,7 +51,7 @@ def main():
         st.subheader("Welcome to Homepage")
         st.write("---")
         st.subheader("Citizens Income Prediction App")
-        st.text("This app will be used to predict whether a customer would be churn or not based on the customer profile.")
+        st.write("This app will be used to predict whether a customer would be churn or not based on the customer profile.")
         st.subheader("Data Source")
         st.write("Kaggle : https://www.kaggle.com/datasets/blastchar/telco-customer-churn/data")
         st.markdown(desc)
