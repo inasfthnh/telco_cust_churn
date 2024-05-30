@@ -1,4 +1,3 @@
-# tempat pemrosesan machine learning ke app.py
 import streamlit as st
 import numpy as np
 from sklearn.preprocessing import LabelEncoder, StandardScaler
