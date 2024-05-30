@@ -29,7 +29,7 @@ def main():
                             width: 200px;
                             height: 200px;
                             border-radius: 50%;
-			    object-position: 75% 100%;
+			    object-position: 100% 10%;
                             overflow: hidden;
                             box-shadow: 0 0 10px rgba(1, 1, 1, 1);
                         }
