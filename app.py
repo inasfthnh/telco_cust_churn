@@ -40,11 +40,14 @@ def main():
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
-                        }
+			}
+   
+   			.position-100-80 {
+      			    object-position: 100% 80%;
+			}
                     </style>
                     <div class="circle-image">
-                        <img class="cropped-image none-image position-70-15" alt="object-position: 70% 15%" 
-                            src="https://www.shutterstock.com/image-vector/logo-inspiration-telecom-business-260nw-1889984209.jpg" />                 
+                        <img src="https://www.shutterstock.com/image-vector/logo-inspiration-telecom-business-260nw-1889984209.jpg" />                 
                     </div>
                     """
                  )
