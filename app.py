@@ -59,8 +59,8 @@ def main():
         st.subheader("Welcome to Homepage")
         st.write("---")
         st.markdown(desc_1)
-	st.markdown(desc_2)
-	st.markdown(desc_3)
+        st.markdown(desc_2)
+        st.markdown(desc_3)
     elif choice == "Machine Learning":
         # st.subheader("Welcome to Machine learning")
         run_ml_app()
