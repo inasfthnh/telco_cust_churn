@@ -55,7 +55,7 @@ def main():
     if choice == 'Home':
         st.subheader("Welcome to Homepage")
         st.write("---")
-        st.markdown(desc_temp)
+        st.text(desc_temp)
     elif choice == "Machine Learning":
         # st.subheader("Welcome to Machine learning")
         run_ml_app()
