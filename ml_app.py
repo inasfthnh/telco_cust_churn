@@ -52,15 +52,33 @@ def run_ml_app():
         Partner = st.selectbox("Partner", ['Yes', 'No'])
         Dependents = st.selectbox("Dependents", ['Yes', 'No'])
         tenure = st.number_input("Tenure", step=1)
-        PhoneService = st.selectbox("Phone Service", ['Yes', 'No'])
-        if PhoneService == 'No':
+        placeholder_for_PhoneService = st.empty()
+        placeholder_for_addPhoneService = st.empty()
+        placeholder_for_InternetService = st.empty()
+        placeholder_for_addInternetService = st.empty()
+        Contract = st.selectbox("Contract", ['Month-to-month', 'One year', 'Two year'])
+        PaperlessBilling = st.selectbox("Paperless Billing", ['Yes', 'No'])
+        PaymentMethod = st.selectbox("Payment Method", ['Electronic check', 'Mailed check', 'Bank transfer (automatic)', 'Credit card (automatic)'])
+        MonthlyCharges = st.number_input("Monthly Charges")   
+        TotalCharges = st.number_input("Total Charges")
+      
+        submitted = st.form_submit_button("Submit")
+
+    with placeholder_for_PhoneService:
+      PhoneService = st.selectbox("Phone Service", ['Yes', 'No'])
+
+    with placeholder_for_addPhoneService:
+      if PhoneService == 'No':
           MultipleLines = st.selectbox("Multiple Lines", options=['Yes', 'No'], disabled=True)
           MultipleLines = 'No Phone Service'
         else:
           MultipleLines = st.selectbox("Multiple Lines", options=['Yes', 'No'], disabled=False)
-          
-        InternetService = st.selectbox("Internet Service", ['DSL', 'Fiber optic', 'No'])
-        if InternetService == 'No':
+
+    with placeholder_for_InternetService:
+      InternetService = st.selectbox("Internet Service", ['DSL', 'Fiber optic', 'No'])
+
+    with placeholder_for_addInternetService:
+      if InternetService == 'No':
           OnlineSecurity = st.selectbox("Online Security", options=['Yes', 'No'], disabled=True)
           OnlineSecurity = 'No internet service'
           OnlineBackup = st.selectbox("Online Backup", options=['Yes', 'No'], disabled=True)
@@ -80,15 +98,7 @@ def run_ml_app():
           TechSupport = st.selectbox("Tech Support", options=['Yes', 'No'], disabled=False)
           StreamingTV = st.selectbox("Streaming TV", options=['Yes', 'No'], disabled=False)
           StreamingMovies = st.selectbox("Streaming Movies", options=['Yes', 'No'], disabled=False)
-
-        Contract = st.selectbox("Contract", ['Month-to-month', 'One year', 'Two year'])
-        PaperlessBilling = st.selectbox("Paperless Billing", ['Yes', 'No'])
-        PaymentMethod = st.selectbox("Payment Method", ['Electronic check', 'Mailed check', 'Bank transfer (automatic)', 'Credit card (automatic)'])
-        MonthlyCharges = st.number_input("Monthly Charges")   
-        TotalCharges = st.number_input("Total Charges")
-      
-        submitted = st.form_submit_button("Submit")
-
+    
     if submitted:
         with st.expander("Your Selected Options"):
             result = {
@@ -126,7 +136,7 @@ def run_ml_app():
         # data cleaning
         addService = ['MultipleLines', 'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies']
         for service in addService:
-          df[service] = df[service].apply(lambda x: 'Yes' if x=='Yes' else 'No')
+          df_baru[service] = df_baru[service].apply(lambda x: 'Yes' if x=='Yes' else 'No')
 
         # label encoding
         for col in df1.columns:
