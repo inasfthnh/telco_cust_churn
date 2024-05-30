@@ -52,7 +52,7 @@ def main():
                     </div>
                     """
                  )
-	st.write(" ")
+	st.write("###")
         st.subheader('TELECOM COMPANY')
         st.write("---")
         choice = st.selectbox("Menu", menu)
