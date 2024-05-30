@@ -52,7 +52,6 @@ def main():
                     </div>
                     """
                  )
-	st.text("")
         st.subheader('TELECOM COMPANY')
         st.write("---")
         choice = st.selectbox("Menu", menu)
