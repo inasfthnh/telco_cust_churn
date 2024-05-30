@@ -20,6 +20,7 @@ desc_temp = """
 
 
 def main():
+    stc.html(html_temp)
     menu = ['Home', 'Machine Learning']
     with st.sidebar:
         stc.html("""
