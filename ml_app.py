@@ -45,7 +45,7 @@ def run_ml_app():
 
     st.subheader("Input Your Data")
     with st.form("my_data"):
-        customerID = st.text_input("Customer ID", value="", max_chars=10, type="default", placeholder=None)
+        customerID = st.text_input("Customer ID", value="", max_chars=10, type="default", placeholder="1234-ABCDE")
         gender = st.selectbox("Gender", ['Male', 'Female'])
         SeniorCitizen = st.selectbox("Senior Citizen", ['Yes', 'No'])
         Partner = st.selectbox("Partner", ['Yes', 'No'])
@@ -173,11 +173,11 @@ def run_ml_app():
 
         if prediction == 0:
             st.info("""
-                Hasil Prediksi Churn : 
+                Hasil Prediksi Churn : \n
                 Customer tidak churn
                 """)
         elif prediction == 1:
             st.info("""
-                Hasil Prediksi Churn : 
+                Hasil Prediksi Churn : \n
                 Customer churn
                 """)
