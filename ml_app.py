@@ -71,7 +71,7 @@ def run_ml_app():
       if PhoneService == 'No':
           MultipleLines = st.selectbox("Multiple Lines", options=['Yes', 'No'], disabled=True)
           MultipleLines = 'No Phone Service'
-        else:
+      else:
           MultipleLines = st.selectbox("Multiple Lines", options=['Yes', 'No'], disabled=False)
 
     with placeholder_for_InternetService:
@@ -91,7 +91,7 @@ def run_ml_app():
           StreamingTV = 'No internet service'
           StreamingMovies = st.selectbox("Streaming Movies", options=['Yes', 'No'], disabled=True)
           StreamingMovies = 'No internet service'
-        else:
+      else:
           OnlineSecurity = st.selectbox("Online Security", options=['Yes', 'No'], disabled=False)
           OnlineBackup = st.selectbox("Online Backup", options=['Yes', 'No'], disabled=False)
           DeviceProtection = st.selectbox("Device Protection", options=['Yes', 'No'], disabled=False)
