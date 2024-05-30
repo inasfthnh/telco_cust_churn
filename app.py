@@ -39,8 +39,8 @@ def main():
                             object-fit: cover;
 			}
    
-   			.position-100-45 {
-      			    object-position: 100% 45%;
+   			.position-75-100 {
+      			    object-position: 75% 100%;
 			}
                     </style>
                     <div class="circle-image">
