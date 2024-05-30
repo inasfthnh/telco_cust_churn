@@ -32,7 +32,8 @@ def main():
                         .circle-image {
                             width: 150px;
                             height: 150px;
-                            border-radius: 30%;
+                            border-radius: 50%;
+			    margin-top:-10px; 
                             overflow: hidden;
                             box-shadow: 0 0 10px rgba(1, 1, 1, 1);
                         }
