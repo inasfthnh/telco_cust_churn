@@ -13,8 +13,6 @@ html_temp = """
 desc_temp = """
 	    ### Citizens Income Prediction App
             This app will be used to predict whether a customer would be churn or not based on the customer profile.
-            #### Data Source
-            Kaggle : https://www.kaggle.com/datasets/blastchar/telco-customer-churn/data
             #### App Content
             - Exploratory Data Analysis
             - Machine Learning Section
@@ -40,8 +38,8 @@ def main():
                             object-fit: cover;
 			}
    
-   			.position-100-65 {
-      			    object-position: 100% 65%;
+   			.position-100-55 {
+      			    object-position: 100% 55%;
 			}
                     </style>
                     <div class="circle-image">
