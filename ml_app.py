@@ -77,7 +77,7 @@ def run_ml_app():
     with placeholder_for_InternetService:
       InternetService = st.selectbox("Internet Service", ['DSL', 'Fiber optic', 'No'])
 
-    with placeholder_for_addInternetService:
+    with placeholder_for_addInternetService.container():
       if InternetService == 'No':
           OnlineSecurity = st.selectbox("Online Security", options=['Yes', 'No'], disabled=True)
           OnlineBackup = st.selectbox("Online Backup", options=['Yes', 'No'], disabled=True)
