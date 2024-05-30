@@ -13,6 +13,8 @@ html_temp = """
 desc_temp = """
             ### Customer Churn Prediction App
             This app will be used to predict whether a customer would be churn or not based on the customer profile.
+	    #### Data Source
+            Kaggle : https://www.kaggle.com/datasets/blastchar/telco-customer-churn/data
             #### App Content
             - Exploratory Data Analysis
             - Machine Learning Section
@@ -45,7 +47,7 @@ def main():
                     <div class="circle-image">
                         <img src="https://www.shutterstock.com/image-vector/logo-inspiration-telecom-business-260nw-1889984209.jpg" />                 
                     </div>
-                  """
+                  """)
         st.subheader('TELECOM COMPANY')
         st.write("---")
         choice = st.selectbox("Menu", menu)
