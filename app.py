@@ -13,6 +13,10 @@ html_temp = """
 desc_temp = """
 	    ### Citizens Income Prediction App
             This app will be used to predict whether a customer would be churn or not based on the customer profile.
+
+     	    ### Data Source
+	    Kaggle :
+     
             #### App Content
             - Exploratory Data Analysis
             - Machine Learning Section
@@ -37,7 +41,7 @@ def main():
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
-			    object-position: 100% 10%;
+			    object-position: 100% 5%;
 			}
                     </style>
                     <div class="circle-image">
