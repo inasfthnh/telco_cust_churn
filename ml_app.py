@@ -172,12 +172,12 @@ def run_ml_app():
         prediction = model.predict(single_array)
 
         if prediction == 0:
-            st.info("""
+            st.success("""
                 Hasil Prediksi Churn : \n
                 Customer tidak churn
                 """)
         elif prediction == 1:
-            st.info("""
+            st.error("""
                 Hasil Prediksi Churn : \n
                 Customer churn
                 """)
