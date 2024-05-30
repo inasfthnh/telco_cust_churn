@@ -27,7 +27,7 @@ def main():
 
     menu = ['Home', 'Machine Learning']
     with st.sidebar:
-        stc.html("""
+	stc.html("""
                     <style>
                         .circle-image {
                             width: 150px;
@@ -50,9 +50,9 @@ def main():
                     <div class="circle-image">
                         <img src="https://www.shutterstock.com/image-vector/logo-inspiration-telecom-business-260nw-1889984209.jpg" />                 
                     </div>
+		    <p>   </p>
                     """
                  )
-	st.subheader(' b')    
         st.subheader('TELECOM COMPANY')
         st.write("---")
         choice = st.selectbox("Menu", menu)
