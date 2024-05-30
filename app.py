@@ -29,7 +29,6 @@ def main():
                             width: 200px;
                             height: 200px;
                             border-radius: 50%;
-			    object-position: 100% 10%;
                             overflow: hidden;
                             box-shadow: 0 0 10px rgba(1, 1, 1, 1);
                         }
@@ -38,6 +37,7 @@ def main():
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
+			    object-position: 100% 10%;
 			}
                     </style>
                     <div class="circle-image">
