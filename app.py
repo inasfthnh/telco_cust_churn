@@ -4,21 +4,13 @@ import streamlit.components.v1 as stc
 from ml_app import run_ml_app
 
 html_temp = """
-            <div style="background-color:#EEAD0D;padding:10px;border-radius:10px">
+            <div style="background-color:#F1B300;padding:10px;border-radius:10px">
 		    <h1 style="color:white;text-align:center;"> Customer Churn Prediction App </h1>
 		    <h2 style="color:white;text-align:center;"> Telecom Company</h2>
 	        </div>
             """
 
-desc_1 = """
-	    ### Citizens Income Prediction App
-            This app will be used to predict whether a customer would be churn or not based on the customer profile.
-	 """
-desc_2 = """
-     	    ### Data Source
-	    Kaggle : https://www.kaggle.com/datasets/blastchar/telco-customer-churn/data
-     	 """
-desc_3 = """
+desc = """
             #### App Content
             - Exploratory Data Analysis
             - Machine Learning Section
@@ -58,9 +50,11 @@ def main():
     if choice == 'Home':
         st.subheader("Welcome to Homepage")
         st.write("---")
-        st.markdown(desc_1)
-        st.markdown(desc_2)
-        st.markdown(desc_3)
+        st.subheader("Citizens Income Prediction App")
+	st.text("This app will be used to predict whether a customer would be churn or not based on the customer profile.")
+        st.subheader("Data Source")
+	st.write("Kaggle : https://www.kaggle.com/datasets/blastchar/telco-customer-churn/data")
+        st.markdown(desc)
     elif choice == "Machine Learning":
         # st.subheader("Welcome to Machine learning")
         run_ml_app()
