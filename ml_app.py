@@ -1,7 +1,7 @@
 # tempat pemrosesan machine learning ke app.py
 import streamlit as st
 import numpy as np
-from sklearn.preprocessing import LabelEncoder, RobustScaler
+from sklearn.preprocessing import LabelEncoder, StandardScaler
 import pandas as pd
 from datetime import date, datetime
 
@@ -80,16 +80,16 @@ def run_ml_app():
     with placeholder_for_addInternetService:
       if InternetService == 'No':
           OnlineSecurity = st.selectbox("Online Security", options=['Yes', 'No'], disabled=True)
-          OnlineSecurity = 'No internet service'
           OnlineBackup = st.selectbox("Online Backup", options=['Yes', 'No'], disabled=True)
-          OnlineBackup = 'No internet service'
           DeviceProtection = st.selectbox("Device Protection", options=['Yes', 'No'], disabled=True)
-          DeviceProtection = 'No internet service'
           TechSupport = st.selectbox("Tech Support", options=['Yes', 'No'], disabled=True)
-          TechSupport = 'No internet service'
           StreamingTV = st.selectbox("Streaming TV", options=['Yes', 'No'], disabled=True)
-          StreamingTV = 'No internet service'
           StreamingMovies = st.selectbox("Streaming Movies", options=['Yes', 'No'], disabled=True)
+          OnlineSecurity = 'No internet service'
+          OnlineBackup = 'No internet service'
+          DeviceProtection = 'No internet service'
+          TechSupport = 'No internet service'
+          StreamingTV = 'No internet service'
           StreamingMovies = 'No internet service'
       else:
           OnlineSecurity = st.selectbox("Online Security", options=['Yes', 'No'], disabled=False)
