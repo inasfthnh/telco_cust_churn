@@ -33,7 +33,6 @@ def main():
                             width: 150px;
                             height: 150px;
                             border-radius: 50%;
-			    margin-top:-10px; 
                             overflow: hidden;
                             box-shadow: 0 0 10px rgba(1, 1, 1, 1);
                         }
@@ -44,8 +43,8 @@ def main():
                             object-fit: cover;
 			}
    
-   			.position-100-75 {
-      			    object-position: 100% 75%;
+   			.position-100-70 {
+      			    object-position: 100% 70%;
 			}
                     </style>
                     <div class="circle-image">
@@ -53,6 +52,7 @@ def main():
                     </div>
                     """
                  )
+	st.write(###)
         st.subheader('TELECOM COMPANY')
         st.write("---")
         choice = st.selectbox("Menu", menu)
