@@ -50,8 +50,8 @@ def main():
                     <div class="circle-image">
                         <img src="https://www.shutterstock.com/image-vector/logo-inspiration-telecom-business-260nw-1889984209.jpg" />                 
                     </div>
-		    <p>   </p>
-                    """
+		    <p> </p>
+                  """
                  )
         st.subheader('TELECOM COMPANY')
         st.write("---")
