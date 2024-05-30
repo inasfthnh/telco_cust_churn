@@ -39,8 +39,8 @@ def main():
                             object-fit: cover;
 			}
    
-   			.position-100-55 {
-      			    object-position: 100% 55%;
+   			.position-100-45 {
+      			    object-position: 100% 45%;
 			}
                     </style>
                     <div class="circle-image">
@@ -55,7 +55,7 @@ def main():
     if choice == 'Home':
         st.subheader("Welcome to Homepage")
         st.write("---")
-        st.text(desc_temp)
+        st.markdown(desc_temp)
     elif choice == "Machine Learning":
         # st.subheader("Welcome to Machine learning")
         run_ml_app()
