@@ -20,12 +20,9 @@ desc_temp = """
 
 
 def main():
-
-    stc.html(html_temp)
-
     menu = ['Home', 'Machine Learning']
     with st.sidebar:
-        custom_html = """
+        stc.html("""
                     <style>
                         .circle-image {
                             width: 200px;
@@ -49,7 +46,6 @@ def main():
                         <img src="https://www.shutterstock.com/image-vector/logo-inspiration-telecom-business-260nw-1889984209.jpg" />                 
                     </div>
                   """
-        st.components.v1.html(custom_html)
         st.subheader('TELECOM COMPANY')
         st.write("---")
         choice = st.selectbox("Menu", menu)
