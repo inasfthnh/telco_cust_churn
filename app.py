@@ -6,7 +6,7 @@ from ml_app import run_ml_app
 html_temp = """
             <div style="background-color:#6F8FAF;padding:10px;border-radius:10px">
 		    <h1 style="color:white;text-align:center;"> Customer Churn Prediction App </h1>
-		    <h2 style="color:white;text-align:center;"> Telecom </h2>
+		    <h2 style="color:white;text-align:center;"> Telecom Company</h2>
 	        </div>
             """
 
@@ -50,8 +50,8 @@ def main():
                     <div class="circle-image">
                         <img src="https://www.shutterstock.com/image-vector/logo-inspiration-telecom-business-260nw-1889984209.jpg" />                 
                     </div>
+		    <p> dcsv </p>
                   """)
-        st.text(" ")
         st.subheader('TELECOM COMPANY')
         st.write("---")
         choice = st.selectbox("Menu", menu)
