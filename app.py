@@ -50,8 +50,8 @@ def main():
     if choice == 'Home':
         st.subheader("Welcome to Homepage")
         st.write("---")
-        st.subheader("Citizens Income Prediction App")
-        st.write("This app will be used to predict whether a customer would be churn or not based on the customer profile.")
+        st.subheader("Customer Churn Prediction App")
+        st.write("This app will be used to predict whether a customer will churn or not based on the customer profile.")
         st.subheader("Data Source")
         st.write("Kaggle : https://www.kaggle.com/datasets/blastchar/telco-customer-churn/data")
         st.markdown(desc)
