@@ -152,7 +152,7 @@ def run_ml_app():
                 df_baru[col] = 0
       
         # feature engineering
-        services = ['PhoneService', 'MultipleLines', 'InternetService_DSL', 'InternetService_Fiber optic', 'InternetService_No',
+        services = ['PhoneService', 'MultipleLines', 'InternetService_DSL', 'InternetService_Fiber optic',
             'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies']
         df_baru['Sum_of_Services'] = df_baru[services].sum(axis=1)
         
